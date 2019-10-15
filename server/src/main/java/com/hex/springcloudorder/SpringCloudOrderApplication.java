@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients
+@EnableFeignClients(basePackages = "com.hex.springcloudproduct.client")
 public class SpringCloudOrderApplication {
 
     public static void main(String[] args) {
