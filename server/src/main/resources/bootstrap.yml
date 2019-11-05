@@ -7,3 +7,9 @@ spring:
         enabled: true
         service-id: CONFIG
       profile: test
+
+#    stream:
+#      bindings:
+#        input:
+#          group: order # 对消息进行分组，避免启用多实例时同时监听获取消息
+#          content-type: application/json # 对消息内容进行序列化
